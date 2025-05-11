@@ -79,6 +79,8 @@ export default function ImageMarkerForm({
   // Update form when selection changes
   useEffect(() => {
     if (selection.visible && !selectedMarkerId) {
+      // This is a new selection, not an existing marker being edited
+      setValue("name", ""); // Reset the name field for a new selection
       setValue("selectionX", selection.x);
       setValue("selectionY", selection.y);
       setValue("selectionWidth", selection.width);
@@ -87,6 +89,8 @@ export default function ImageMarkerForm({
       // Mock OCR result (in a real app, this would be from an API call)
       if (selection.width > 5 && selection.height > 5) {
         setValue("ocrTextDisplay", "Sample OCR text from selected area");
+      } else {
+        setValue("ocrTextDisplay", ""); // Clear OCR if selection is too small
       }
     }
   }, [selection, setValue, selectedMarkerId]);
