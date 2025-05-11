@@ -40,27 +40,27 @@ const data = {
   navMain: [
     {
       title: "Dashboard",
-      url: "#",
+      url: "/",
       icon: IconDashboard,
     },
     {
-      title: "Lifecycle",
-      url: "#",
+      title: "标记demo",
+      url: "/demo",
       icon: IconListDetails,
     },
     {
       title: "Analytics",
-      url: "#",
+      url: "/analytics",
       icon: IconChartBar,
     },
     {
       title: "Projects",
-      url: "#",
+      url: "/projects",
       icon: IconFolder,
     },
     {
       title: "Team",
-      url: "#",
+      url: "/team",
       icon: IconUsers,
     },
   ],
