@@ -1,6 +1,5 @@
-import React, { type FC } from "react";
-export interface LifeCycleProps {}
-const LifeCycle: FC<LifeCycleProps> = () => {
+import  { type FC } from "react";
+const LifeCycle: FC = () => {
   return <div>Hello LifeCycle</div>;
 };
 
